@@ -3,21 +3,24 @@ programa
 	
 	funcao inicio()
 	{
-		real dias, meses, anos // declarando as variáveis do problema como reais
-		escreva ("Expresse quantos anos você tem em dias: ") // pedindo ao usuário que entre com um valor
-		leia(dias) // guardando este valor na variável dias
-		anos = dias/365 // operação para transformar dias em anos
-		meses = anos * 12 // operação para transformar dias em meses 
-		escreva ("\nA sua idade expressa em anos é: ", anos) // imprimindo na tela 
-		escreva ("\nA sua idade expressa em meses é: ", meses) // imprimindo na tela
+		inteiro anos, meses, dias, resp, sobra
+		escreva("Entre com sua idade em dias: ")
+		leia (resp)
+		anos=resp/365
+		sobra=resp%365
+		meses=sobra/30
+		dias=sobra%30
+		
+		escreva("\nSua idade é: ",anos," anos, ",meses," meses e ",dias," dias")
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 547; 
+ * @POSICAO-CURSOR = 279; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
